@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.christacodes.sync.MainActivity">
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/linearLayout">
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryLight"
+                android:id="@+id/cameraButton"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chats"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
+                android:textColor="#ffffff"
+                android:id="@+id/chatsButton"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moments"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryLight"
+                android:id="@+id/momentsButton"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryLight"
+                android:id="@+id/feedButton"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chat_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:transcriptMode="alwaysScroll"
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout2"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/linearLayout2"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentStart="true">
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:layout_weight="1"
+                android:background="#f3f3f3"
+                android:id="@+id/allButton"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unlocked"
+                android:layout_weight="1"
+                android:background="#e6e6e6"
+                android:id="@+id/unlockedButton"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locked"
+                android:layout_weight="1"
+                android:background="#e6e6e6"
+                android:id="@+id/lockedButton"/>
+    </LinearLayout>
+
+</RelativeLayout>
